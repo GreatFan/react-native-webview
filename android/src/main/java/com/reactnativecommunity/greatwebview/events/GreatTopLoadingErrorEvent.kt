@@ -1,17 +1,16 @@
-package com.reactnativecommunity.webview.events
+package com.reactnativecommunity.greatwebview.events
 
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.uimanager.events.Event
 import com.facebook.react.uimanager.events.RCTEventEmitter
 
 /**
- * Event emitted when the WebView's process has crashed or
-   was killed by the OS.
+ * Event emitted when there is an error in loading.
  */
-class TopRenderProcessGoneEvent(viewId: Int, private val mEventData: WritableMap) :
-  Event<TopRenderProcessGoneEvent>(viewId) {
+class GreatTopLoadingErrorEvent(viewId: Int, private val mEventData: WritableMap) :
+  Event<GreatTopLoadingErrorEvent>(viewId) {
   companion object {
-    const val EVENT_NAME = "topRenderProcessGone"
+    const val EVENT_NAME = "topLoadingError"
   }
 
   override fun getEventName(): String = EVENT_NAME

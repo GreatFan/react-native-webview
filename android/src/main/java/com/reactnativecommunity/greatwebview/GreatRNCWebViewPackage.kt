@@ -1,15 +1,15 @@
-package com.reactnativecommunity.webview
+package com.reactnativecommunity.greatwebview
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.ReactApplicationContext
 
 
-class RNCWebViewPackage: ReactPackage {
+class GreatRNCWebViewPackage: ReactPackage {
   override fun createNativeModules(reactContext: ReactApplicationContext) = listOf(
-    RNCWebViewModule(reactContext)
+    GreatRNCWebViewModule(reactContext)
   )
 
   override fun createViewManagers(reactContext: ReactApplicationContext) = listOf(
-    RNCWebViewManager()
+    GreatRNCWebViewManager()
   )
 }

@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.reactnativecommunity.webview">
+  package="com.reactnativecommunity.greatwebview">
 
   <application>
     <provider
-      android:name=".RNCWebViewFileProvider"
+      android:name="com.reactnativecommunity.greatwebview.GreatRNCWebViewFileProvider"
       android:authorities="${applicationId}.fileprovider"
       android:exported="false"
       android:grantUriPermissions="true">

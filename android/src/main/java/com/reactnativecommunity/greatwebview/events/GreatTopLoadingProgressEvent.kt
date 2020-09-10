@@ -1,4 +1,4 @@
-package com.reactnativecommunity.webview.events
+package com.reactnativecommunity.greatwebview.events
 
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.uimanager.events.Event
@@ -7,8 +7,8 @@ import com.facebook.react.uimanager.events.RCTEventEmitter
 /**
  * Event emitted when there is a loading progress event.
  */
-class TopLoadingProgressEvent(viewId: Int, private val mEventData: WritableMap) :
-  Event<TopLoadingProgressEvent>(viewId) {
+class GreatTopLoadingProgressEvent(viewId: Int, private val mEventData: WritableMap) :
+  Event<GreatTopLoadingProgressEvent>(viewId) {
   companion object {
     const val EVENT_NAME = "topLoadingProgress"
   }

@@ -1,4 +1,4 @@
-package com.reactnativecommunity.webview.events
+package com.reactnativecommunity.greatwebview.events
 
 import com.facebook.react.bridge.WritableMap
 import com.facebook.react.uimanager.events.Event
@@ -7,15 +7,13 @@ import com.facebook.react.uimanager.events.RCTEventEmitter
 /**
  * Event emitted when shouldOverrideUrlLoading is called
  */
-class TopShouldStartLoadWithRequestEvent(viewId: Int, private val mData: WritableMap) : Event<TopShouldStartLoadWithRequestEvent>(viewId) {
+class GreatTopShouldStartLoadWithRequestEvent(viewId: Int, private val mData: WritableMap) : Event<GreatTopShouldStartLoadWithRequestEvent>(viewId) {
   companion object {
     const val EVENT_NAME = "topShouldStartLoadWithRequest"
   }
 
   init {
     mData.putString("navigationType", "other")
-    // Android does not raise shouldOverrideUrlLoading for inner frames
-    mData.putBoolean("isTopFrame", true)
   }
 
   override fun getEventName(): String = EVENT_NAME
